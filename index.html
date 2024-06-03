@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Office</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <div class="images">
+                <img class="navbar-brand" src="images/Estancia.png" alt="Estancia">
+                <img class="navbar-brand" src="images/mor.png" alt="Mor">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vmg" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <header class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex">
+                <div class="text-md-start">
+                    <h2 class="mb-lg-0">Estancia</h2>
+                    <h1 class="text-warning display-1 mb-0 fw-bolder">Municipal Population Office</h1>
+                    <p class="lead my-1 text-sm-end">Touching Lives Towards Human Development</p>
+                    <a href="https://www.iloilo-pop.com/#/home/index/news" target="_blank" class="btn btn-primary btn-sm text-white text-decoration-none">Click to go to IPOP</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Charts -->
+    <section class="container my-5">
+        <div class="row g-2">
+            <div class="col-md-5 bg-dark rounded-2 text-white p-4">
+                <div class="chart-container">
+                    <h4 class="lead text-center mt-5 fs-4 mb-5">Total Population (2021-2023)</h4>
+                    <figure>
+                        <canvas id="chart1"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile. PPO. 2021-2023</small></figcaption>
+                    </figure>
+                    <hr>
+                    <p class="lead text-center"><small>The population grew by 3.15% from 2021 to 2023. This growth can be attributed to various factors such as natural increase (the difference between births and deaths), immigration, and other demographic changes.</small></p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 bg-dark rounded-2 text-white p-4">
+                <div class="chart-container mb-sm-auto">
+                    <h6 class="lead text-center mt-5 mb-5">2023 Population Pyramid</h6>
+                    <figure>
+                        <canvas id="chart2"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile. PPO. 2023</small></figcaption>
+                    </figure>
+                    <hr>
+                    <p class="lead text-center"><small>The population pyramid represents a growing population with an increased proportion of young people and a broad working-age base. The relatively smaller elderly population indicates that the municipality might have a lower dependency ratio but could face future challenges in providing for an aging population as life expectancy increases.</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Mission Goals Section -->
+    <section id="vmg" class="bg-info-subtle py-5">
+        <div class="bg-primary text-white text-center py-3">
+            <h2 class="display-5">Vision Mission & Goals</h2>
+        </div>
+        <div class="container text-center py-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">VISION</h4>
+                            <p class="card-text">By 2025, the Provincial Population Office (PPO), as the implementing arm for the Philippine Population and Development Program in the Province of Iloilo, will be dynamic, reliable, people-centered, technology-driven and culturally-sensitive population information resource agency in Region VI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">MISSION</h4>
+                            <p class="card-text">To provide technical assistance and information needs to the Local Government Units (LGUs), partner agencies and stakeholders in carrying out measures relative to the integration of population and development, through the generation and utilization of reliable and updated data, and Implementation of population development programs and projects to uplift the quality of life of the Ilonggo population.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">GOALS</h4>
+                            <ol class="card-text">
+                                <li>To generate and maintain an efficient and reliable data bank responsive to the data and information needs of the population development programs of the Province of Iloilo.</li>
+                                <li>To provide updated data and information to support program operations and development planning of LGUs, partner agencies, and other stakeholders.</li>
+                                <li>To undertake educational projects that promote people's participation and empowerment towards total human development in the context of our cultural heritage.</li>
+                                <li>To apply new technologies and processes that will effect more efficient and effective data generation, processing, and management.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Core Values</h4>
+                            <p class="card-text">We, the constituents of the Provincial Population Office (PPO), commit ourselves to the following core values and endeavor to LIVE IT:</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Love of Service:</strong> Love of fellowmen expressed through service beyond self is the overarching principle that guides all other actions and endeavors.</li>
+                                <li><strong>Innovation:</strong> We believe that the creation of new ideas and initiatives in the context of our cultural heritage is the noblest response to the challenge of change in our communities.</li>
+                                <li><strong>Vigor and Enthusiasm:</strong> Our most profound expression of our commitment to our vision, mission, and goals.</li>
+                                <li><strong>Excellence:</strong> Our efforts and actions will be guided by the highest standards of quality and excellence.</li>
+                                <li><strong>Integrity:</strong> We uphold the principle of truth and honesty, realizing that in our dealings, we are accountable to each other and to our clients, partners, and stakeholders.</li>
+                                <li><strong>Team Work:</strong> Given our diverse talent and skills, we will work together to achieve PPO goals.</li>
+                            </ul>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Services -->
+    <section>
+        <div class="container-services">
+            <div class="service-wrapper">
+                <div class="service">
+                    <h1>Services Offered <span></span></h1>
+                    <div class="cards">
+                        <div class="card">
+                            <i class="fa-solid fa-database"></i>
+                           <h2 class="off"> Population Data Management</h2>
+                            <ul>
+                                <li>Provision of population Data</li>
+                            </ul>
+
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-children"></i>
+                            <h2 class="off">Adolescent Health and Youth Development Program</h2>                            <ul>
+                                <li>Establishment of School-Based Multi-Purpose Teen Centers</li>
+                                <li>AHYD Lectures</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                            <h2 class="off">Responsible Parenthood</h2>
+                            <ul>
+                                <li>Pre-Marriage Counseling</li>
+                                <li>Establishment of Multi-Purpose Counseling and Family Development Center</li>
+                                <li>Family Development Sessions</li>
+                                <li>Lectures:</li>
+                                      <ul>
+                                        <li>Responsible Parenthood</li>
+                                        <li>Responsible Sexuality</li>
+                                      </ul>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <h2 class="off">Population and Development Integration</h2>
+                            <ul>
+                                <li>Gender-Responsive PopDev. Training</li>
+                                <li>PopDev. Workshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div id="inputModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Input Population Data</h2>
+            <form id="populationForm">
+                <div>
+                    <label for="ageGroup">Age Group</label>
+                    <input type="text" id="ageGroup" name="ageGroup" placeholder="e.g., 0-9">
+                </div>
+                <div>
+                    <label for="maleData">Male Population</label>
+                    <input type="number" id="maleData" name="maleData">
+                </div>
+                <div>
+                    <label for="femaleData">Female Population</label>
+                    <input type="number" id="femaleData" name="femaleData">
+                </div>
+                <button type="button" id="submitDataBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact & Map -->
+   <div class="new-container mt-lg-4">
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Contact Info</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span>
+                                <span class="mx-lg-3 h5"> Poblacion Zone 1, Estancia, Iloilo</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">PPO 1:</span class="mx-lg-3 h5"> Berandine Y. Adaniel
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Contact Number:</span> (+63) 946-039-6568 TNT
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Email Address:</span>
+                                <a class="mx-lg-4" href="mailto:adanielb28@gmail.com">adanielb28@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="540" height="380"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+   </div>
+    <!-- Footer -->
+    <footer id="footer" class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead fs-6 fst-italic">Copyright &copy; 2024. All rights reserved.</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5 h3">
+                <i class="fas fa-angle-double-up text-white" style="font-size:36px"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
