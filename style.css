@@ -29,6 +29,7 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
     background-color: #0056b3;
 }
 
@@ -199,9 +200,11 @@ form input[type="number"] {
     background-color: transparent;
     transform: translateY(-8px);
     border-color: #00ff37;
+    cursor: pointer;
 }
 .container-services .card:hover i {
     color: #00ff37;
+    cursor: pointer;
 }
 .col-md-6 .card {
     
@@ -222,6 +225,7 @@ form input[type="number"] {
     background-color: transparent;
     transform: translateY(-8px);
     border-color: blue;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -263,6 +267,9 @@ form input[type="number"] {
         left: auto;
         right: auto;
         font-size: small;
+    }
+    .map {
+        width: auto;
     }
 }
 
