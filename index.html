@@ -37,17 +37,48 @@
 
     <!-- Showcase -->
     <header class="bg-dark text-light p-5 text-center text-sm-start">
-        <div class="container">
+        <div class="container mb-2">
             <div class="d-sm-flex">
                 <div class="text-md-start">
                     <h2 class="mb-lg-0">Estancia</h2>
                     <h1 class="text-warning display-1 mb-0 fw-bolder">Municipal Population Office</h1>
                     <p class="lead my-1 text-sm-end">Touching Lives Towards Human Development</p>
-                    <a href="https://www.iloilo-pop.com/#/home/index/news" target="_blank" class="btn btn-primary btn-sm text-white text-decoration-none">Click to go to IPOP</a>
+                    <a href="https://www.iloilo-pop.com/#/home/index/news" target="_blank" class="btn btn-primary btn-sm text-white text-decoration-none mb-md-1">Click to go to IPOP</a>
                 </div>
             </div>
         </div>
     </header>
+
+  <!-- --------Window Cards-----------   -->
+  <div class="my-card">
+    <div class="row w-100 mt-lg-4 my-4 mx-1">
+            <div class="col-md-3">
+                <div class="card border-info mx-sm-1 p-6 mb-4 mt-4">
+                    <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-children" aria-hidden="true"></span><span><h4 class="text-center" >Total Births</h4></span></div>
+                    <div class="text-info text-center mt-2"><h1>401</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-success mx-sm-1 p-6 mb-4 mt-4">
+                    <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-bomb" aria-hidden="true"></span><span><h4 class="text-center" >Total Deaths</h4></span></div>
+                    <div class="text-success text-center mt-2"><h1>58</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-danger mx-sm-1 p-6 mb-4 mt-4">
+                    <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-industry" aria-hidden="true"></span><span><h4 class="text-center" >In-migration</h4></span></div>
+                    <div class="text-danger text-center mt-2"><h1>140</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-warning mx-sm-1 p-6 mb-4 mt-4">
+                    <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span><span><h4 class="text-center" >Out-migration</h4></span></div>
+                    <div class="text-warning text-center mt-2"><h1>40</h1></div>
+                </div>
+            </div>
+         </div>
+    </div>
+
 
 <!-- Tables -->
 <div class="container my-4">
@@ -127,10 +158,10 @@
 </div>
 
     <!-- Charts -->
-    <section class="container my-lg-4">
+    <section class="container my-lg-1">
         <div class="row g-2">
-            <div class="col-md-5 bg-dark rounded-2 text-white p-2">
-                <div class="chart-container">
+            <div class="col-md-5 bg-dark rounded-2 text-white p-4">
+                <div class="chart-container mb-sm-auto">
                     <h4 class="lead text-center mt-2 fs-4 mb-5">Total Population (2021-2023)</h4>
                     <figure>
                         <canvas id="chart1"></canvas>
@@ -141,7 +172,7 @@
                 </div>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-5 bg-dark rounded-2 text-white p-4">
+            <div class="col-md-5 bg-dark rounded-2 text-white p-2">
                 <div class="chart-container mb-sm-auto">
                     <h6 class="lead text-center mt-5 mb-5">2023 Population Pyramid</h6>
                     <figure>
@@ -309,7 +340,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md">
+                    <div class="col-sm">
                         <iframe src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="540" height="380"></iframe>
                     </div>
                 </div>
