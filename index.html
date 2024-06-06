@@ -28,7 +28,19 @@
                         <a href="#vmg" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#footer" class="nav-link">Contact</a>
+                        <a href="#demog" class="nav-link">Demography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#table" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#chart" class="nav-link">Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,28 +62,28 @@
     </header>
 
   <!-- --------Window Cards-----------   -->
-  <div class="my-card">
-    <div class="row w-100 mt-lg-4 my-4 mx-1">
+  <div id="demog"  class="my-card">
+    <div class="row w-100 mt-lg-4 my-2 mx-1">
             <div class="col-md-3">
-                <div class="card border-info mx-sm-1 p-6 mb-4 mt-4">
+                <div class="card border-info mx-sm-1 p-6 mb-1 mt-2">
                     <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-children" aria-hidden="true"></span><span><h4 class="text-center" >Total Births</h4></span></div>
                     <div class="text-info text-center mt-2"><h1>401</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card border-success mx-sm-1 p-6 mb-4 mt-4">
+                <div class="card border-success mx-sm-1 p-6 mb-1 mt-2">
                     <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-bomb" aria-hidden="true"></span><span><h4 class="text-center" >Total Deaths</h4></span></div>
                     <div class="text-success text-center mt-2"><h1>58</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card border-danger mx-sm-1 p-6 mb-4 mt-4">
+                <div class="card border-danger mx-sm-1 p-6 mb-1 mt-2">
                     <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-industry" aria-hidden="true"></span><span><h4 class="text-center" >In-migration</h4></span></div>
                     <div class="text-danger text-center mt-2"><h1>140</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card border-warning mx-sm-1 p-6 mb-4 mt-4">
+                <div class="card border-warning mx-sm-1 p-6 mb-1 mt-2">
                     <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span><span><h4 class="text-center" >Out-migration</h4></span></div>
                     <div class="text-warning text-center mt-2"><h1>40</h1></div>
                 </div>
@@ -81,7 +93,7 @@
 
 
 <!-- Tables -->
-<div class="container my-4">
+<div  id="table"  class="container my-4">
     <table class="table table-dark table-hover p-lg-5">
         <caption>Source:Municipal Profile 2023.PPO</caption>
         <thead class="text-lg-center text-center display-6">
@@ -158,7 +170,7 @@
 </div>
 
     <!-- Charts -->
-    <section class="container my-lg-1">
+    <section id="chart"  class="container my-lg-1">
         <div class="row g-2">
             <div class="col-md-5 bg-dark rounded-2 text-white p-4">
                 <div class="chart-container mb-sm-auto">
@@ -244,7 +256,7 @@
     </section>
 <!-- Services -->
     <section>
-        <div class="container-services">
+        <div id="services" class="container-services">
             <div class="service-wrapper">
                 <div class="service">
                     <h1>Services Offered <span></span></h1>
@@ -317,9 +329,9 @@
     </div>
 
     <!-- Contact & Map -->
-   <div class="new-container mt-lg-4">
+   <div  id="contact"  class="new-container mt-lg-4">
         <section class="p-5">
-            <div class="container">
+            <div  class="container">
                 <div class="row g-4">
                     <div class="col-md">
                         <h2 class="text-center mb-4">Contact Info</h2>
@@ -341,7 +353,7 @@
                         </ul>
                     </div>
                     <div class="col-sm">
-                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="540" height="380"></iframe>
+                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="550" height="550"></iframe>
                     </div>
                 </div>
             </div>
@@ -352,9 +364,7 @@
     <footer id="footer" class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
             <p class="lead fs-6 fst-italic">Copyright &copy; 2024. All rights reserved.</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5 h3">
-                <i class="fas fa-angle-double-up text-white" style="font-size:36px"></i>
-            </a>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </div>
     </footer>
 
