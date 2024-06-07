@@ -7,7 +7,7 @@ body {
     background-color: #f4f4f4;
 }
 .images{
-    width: 150 !important;
+    width: 150 ;
     padding: 5px;
    
 }
@@ -251,7 +251,21 @@ form input[type="number"] {
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
- 
+
+ .col-md-2 {
+    margin-left: auto;
+    margin-right: auto;
+   
+ }
+ .my-card {
+   
+    margin-top: 0;
+ }
+
+#demo {
+    text-align: center;
+    font-weight: bolder;
+}
 @media screen and (max-width: 1200px) {
     .container-services .cards {
         grid-template-columns: repeat(1,1fr);
@@ -296,6 +310,24 @@ form input[type="number"] {
         width: auto;
         margin-right: auto;
         margin-left: auto;
+        padding-left: 5px;
+    }
+    .navbar-brand1, .navbar-brand {
+        width: 55px;
+    }
+    .navbar-toggler {
+        width: 45px;
+    }
+    .navbar-toggler-icon {
+       width:25px ; 
     }
 }
+@media (min-width:425px) {
+    .container-services, .cards {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 
