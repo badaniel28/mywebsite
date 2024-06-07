@@ -318,7 +318,7 @@ form input[type="number"] {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
-        padding-left: 5px;
+        padding-left: 2px;
     }
     .navbar-brand1, .navbar-brand {
         width: 55px;
@@ -328,6 +328,9 @@ form input[type="number"] {
     }
     .navbar-toggler-icon {
        width:25px ; 
+    }
+    .container-services .card {
+        width: 300px;
     }
 }
 
