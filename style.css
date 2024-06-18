@@ -312,9 +312,6 @@ form input[type="number"] {
         right: auto;
         font-size: small;
     }
-   
-}
-@media (min-width:462px) {
     .container-services, .cards {
         width: auto;
         margin-right: auto;
