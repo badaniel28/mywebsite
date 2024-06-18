@@ -2,9 +2,13 @@
 
 /* Reset some basic elements */
  
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins',sans-serif;
     background-color: #f4f4f4;
+
 }
 .images{
     width: 150 ;
@@ -113,11 +117,7 @@ form input[type="number"] {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: transparent;
   letter-spacing: 4px;
-  /* background-color: rgb(4,52,83); */
-  /* background: linear-gradient(8deg,rgba(8,52,83,1)0%,rgba(0,230,173,1)41%,rbga(41,17,45,1)100%);
-   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+ 
   position: relative;
 }
 .service h1::after{
@@ -148,10 +148,10 @@ form input[type="number"] {
     margin-bottom: 50px;
 }
 .container-services .card {
-    height: 350px;
-    width: 370px;
+    height: auto;
+    width: 470px;
     background-color: #1c2335;
-    padding: 5% 5% auto 8%;
+    padding: 45px 45px auto 65px;
     border: 0.2px solid rgba(114,226,174,0.2);
     border-radius: 8px;
     transition: .6s;
@@ -166,7 +166,7 @@ form input[type="number"] {
 .container-services .card i {
     color: #72e2ae;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 4.8rem;
 }
 .off {
@@ -266,6 +266,12 @@ form input[type="number"] {
     text-align: center;
     font-weight: bolder;
 }
+#births{
+    display: block;
+}
+#deaths{
+    display: block;
+}
 @media screen and (max-width: 1200px) {
     .container-services .cards {
         grid-template-columns: repeat(1,1fr);
@@ -321,7 +327,7 @@ form input[type="number"] {
         padding-left: 2px;
     }
     .navbar-brand1, .navbar-brand {
-        width: 55px;
+        width: 100px;
     }
     .navbar-toggler {
         width: 45px;

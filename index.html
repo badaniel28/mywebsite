@@ -61,38 +61,31 @@
         </div>
     </header>
     <br>
-  <!-- --------Window Cards-----------   -->
-  <div id="demog"  class="my-card">
-    <div class="row w-100 mt-lg-2 my-2 mx-1">
-             <h1 class="text-sm-center" id="demo">Basic Demographic Data</h1>
-
-            <div class="col-md-2">
-                <div class="card border-info mx-sm-1 p-6 mb-1 mt-2">
-                    <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-children" aria-hidden="true"></span><span><h4 class="text-center" >Total Births</h4></span></div>
-                    <div class="text-info text-center mt-2"><h1>401</h1></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card border-success mx-sm-1 p-6 mb-1 mt-2">
-                    <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-bomb" aria-hidden="true"></span><span><h4 class="text-center" >Total Deaths</h4></span></div>
-                    <div class="text-success text-center mt-2"><h1>58</h1></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card border-danger mx-sm-1 p-6 mb-1 mt-2">
-                    <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-industry" aria-hidden="true"></span><span><h4 class="text-center" >In-migration</h4></span></div>
-                    <div class="text-danger text-center mt-2"><h1>140</h1></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card border-warning mx-sm-1 p-6 mb-1 mt-2">
-                    <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span><span><h4 class="text-center" >Out-migration</h4></span></div>
-                    <div class="text-warning text-center mt-2"><h1>40</h1></div>
-                </div>
-            </div>
-         </div>
-    </div>
-
+  <!-- --------Demography-----------   -->
+    
+     <div id="demog">
+        <h1 class="text-sm-center" id="demo">Basic Demographic Data</h1>
+    </div><br><br><br>
+    <div>
+        <canvas class="mb-md-5"  id="births"></canvas>
+    </div><br>
+    <hr>
+    <br><br>
+    <div>
+        <canvas class="mb-md-5" id="deaths" ></canvas>
+    </div><br>
+    <hr>
+    <br><br>
+    <div>
+        <canvas class="mb-md-5" id="InMig" ></canvas>
+    </div><br>
+    <hr>
+    <br><br>
+    <div>
+        <canvas class="mb-md-5" id="OutMig" ></canvas>
+    </div><br>
+    <hr>
+    <br><br>
 
 <!-- Tables -->
 <div  id="table"  class="container my-4">
@@ -186,15 +179,15 @@
                 </div>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-5 bg-dark rounded-2 text-white p-2">
+            <div class="col-md-5 bg-dark rounded-2 text-white p-4">
                 <div class="chart-container mb-sm-auto">
-                    <h6 class="lead text-center mt-5 mb-5">2023 Population Pyramid</h6>
+                    <h6 class="lead text-center mt-2 mb-5">2023 Population Pyramid</h6>
                     <figure>
                         <canvas id="chart2"></canvas>
                         <caption><small>Source: Municipal Population Profile. PPO. 2023</small></caption>
                     </figure>
                     <hr>
-                    <p class="lead text-center"><small>The population pyramid represents a growing population with an increased proportion of young people and a broad working-age base. The relatively smaller elderly population indicates that the municipality might have a lower dependency ratio but could face future challenges in providing for an aging population as life expectancy increases.</small></p>
+                    <p class="lead text-center"><small>The population pyramide represents a growing population with an increased proportion of young people and a broad working-age base. The relatively smaller elderly population indicates that the municipality might have a lower dependency ratio but could face future challenges in providing for an aging population as life expectancy increases.</small></p>
                 </div>
             </div>
         </div>
@@ -205,7 +198,7 @@
         <div class="bg-primary text-white text-center py-3">
             <h2 class="display-5">Vision Mission & Goals</h2>
         </div>
-        <div class="container text-center py-5">
+        <div class="container text-center py-4">
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card">
@@ -256,12 +249,14 @@
             </div>
         </div>
     </section>
+    <hr>
+
 <!-- Services -->
     <section>
         <div id="services" class="container-services">
             <div class="service-wrapper">
                 <div class="service">
-                    <h1>Services Offered <span></span></h1>
+                    <h1 class="text-center">Services Offered <span></span></h1>
                     <div class="cards">
                         <div class="card">
                             <i class="fa-solid fa-database"></i>
@@ -355,7 +350,7 @@
                         </ul>
                     </div>
                     <div class="col-sm">
-                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="550" height="550"></iframe>
+                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="850" height="450"></iframe>
                     </div>
                 </div>
             </div>

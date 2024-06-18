@@ -35,6 +35,53 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
     });
+    var ctx3 = document.getElementById('births').getContext('2d');
+    var chart3 = new Chart(ctx3, {
+        type: 'bar',
+        data: {
+            labels: ['2021','2022', "2023"],
+            datasets: [{
+                label: 'Total Births (2021-2023)',
+                data: [ 507, 405, 401],
+                backgroundColor: ['rgba(54, 162, 235, 1)', 'rgba(218, 65, 56, 1)','rgba(77, 56, 218, 1)'],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: "Total Births (2021-2023)",
+                    font: { 
+                        size: 24 
+                    }       
+                }     
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Years'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of Births'
+                    }
+                }
+            }
+        }
+    });
     var ctx1 = document.getElementById('chart1').getContext('2d');
     var chart1 = new Chart(ctx1, {
         type: 'bar',
@@ -57,6 +104,148 @@ document.addEventListener('DOMContentLoaded', (event) => {
             plugins: {
                 legend: {
                     display: false
+                }
+            }
+        }
+    });
+
+    var ctx4 = document.getElementById('deaths').getContext('2d');
+    var chart4 = new Chart(ctx4, {
+        type: 'bar',
+        data: {
+            labels: ['2021','2022', "2023"],
+            datasets: [{
+                label: 'Total Deaths (2021-2023)',
+                data: [ 239, 223, 58],
+                backgroundColor: ['#968800', '#968800','#880096'],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: "Total Deaths (2021-2023)",
+                    font: { 
+                        size: 24 
+                    }       
+                }     
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Years'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of Deaths'
+                    }
+                }
+            }
+        }
+    });
+    var ctx5 = document.getElementById('InMig').getContext('2d');
+    var chart5 = new Chart(ctx5, {
+        type: 'bar',
+        data: {
+            labels: ['2021','2022', "2023"],
+            datasets: [{
+                label: 'Total In-Migration (2021-2023)',
+                data: [ 1649, 945, 140],
+                backgroundColor: ['#3d0096', '#8a66c0','#d0c1e5'],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: "Total In-Migration (2021-2023)",
+                    font: { 
+                        size: 24 
+                    }       
+                }     
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Years'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of In-Migration'
+                    }
+                }
+            }
+        }
+    });
+    var ctx6 = document.getElementById('OutMig').getContext('2d');
+    var chart6 = new Chart(ctx6, {
+        type: 'bar',
+        data: {
+            labels: ['2021','2022', "2023"],
+            datasets: [{
+                label: 'Total Out-Migration (2021-2023)',
+                data: [ 991, 941, 40],
+                backgroundColor: ['#b73a4c', '#3a8ab7','#191919'],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: "Total Out-Migration (2021-2023)",
+                    font: { 
+                        size: 24 
+                    }       
+                }     
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Years'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of Out-Migration'
+                    }
                 }
             }
         }
