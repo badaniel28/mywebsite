@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        label {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>2023 BASIC MUNICIPAL and BARANGAY PROFILES</h1>
+    <label for="pdf-select">Choose a PDF to download:</label>
+    <select id="pdf-select" name="pdfs">
+        <option value="pdfs/MunicipalProfile.pdf">MUNICIPAL PROFILE</option>
+        <option value="pdfs/Bayas.pdf">BAYAS</option>
+        <option value="pdfs/Bayuyan.pdf">BAYUYAN</option>
+        <option value="pdfs/Botongon.pdf">BOTONGON</option>
+        <option value="pdfs/Bulaquena.pdf">BULAQUENA</option>
+        <option value="pdfs/Calapdan.pdf">CALAPDAN</option>
+        <option value="pdfs/Cano-an.pdf">CANO-AN</option>
+        <option value="pdfs/Daan Banwa.pdf">DAAN BANWA</option>
+        <option value="pdfs/Daculan.pdf">DACULAN</option>
+        <option value="pdfs/Gogo.pdf">GOGO</option>
+        <option value="pdfs/Jolog.pdf">JOLOG</option>
+        <option value="pdfs/Loguinguot.pdf">LOGUINGUOT</option>
+        <option value="pdfs/Lonoy.pdf">LONOY</option>
+        <option value="pdfs/Lumbia.pdf">LUMBIA</option>
+        <option value="pdfs/Malbog.pdf">MALBOG</option>
+        <option value="pdfs/Manipulon.pdf">MANIPULON</option>
+        <option value="pdfs/Pa-on.pdf">PA-ON</option>
+        <option value="pdfs/Poblacion Zone I.pdf">POBLACION ZONE I</option>
+        <option value="pdfs/Poblacion Zone II.pdf">POBLACION ZONE II</option>
+        <option value="pdfs/Poblacion Zone III.pdf">POBLACION ZONE III</option>
+        <option value="pdfs/San Roque.pdf">SAN ROQUE</option>
+        <option value="pdfs/Sta. Ana.pdf">STA. ANA</option>
+        <option value="pdfs/Tabu-an.pdf">TABU-AN</option>
+        <option value="pdfs/Tacbuyan.pdf">TACBUYAN</option>
+        <option value="pdfs/Tanza.pdf">TANZA</option>
+        <option value="pdfs/Villa Pani-an.pdf">VILLA PANI-AN</option>
+    </select>
+    <button onclick="downloadPDF()">Download PDF</button>
+
+    <script>
+        function downloadPDF() {
+            var select = document.getElementById('pdf-select');
+            var selectedValue = select.value;
+            window.location.href = selectedValue;
+        }
+    </script>
+</body>
+</html>
