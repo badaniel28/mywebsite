@@ -39,6 +39,9 @@
                     <li class="nav-item">
                         <a href="#services" class="nav-link">Services</a>
                     </li>
+                     <li class="nav-item">
+                        <a href="#PMOC" class="nav-link">Book Schedule PMOC</a>
+                    </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
@@ -324,7 +327,27 @@
             </form>
         </div>
     </div>
-
+<!-- PMOC-->
+    <div id="PMOC" class="new-container mt-lg-4">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ04SldoEllZw7g6zi7YbrxmvwJzeD4Uv_dWmhBBz1nxSsN4da4wpyspWQdaeo7AuvNVO5Qh68HZ?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+<!-- end Google Calendar Appointment Scheduling -->
+    </div>
+    
     <!-- Contact & Map -->
    <div  id="contact"  class="new-container mt-lg-4">
         <section class="p-5">
