@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var chart3 = new Chart(ctx3, {
         type: 'bar',
         data: {
-            labels: ['2021','2022', "2023"],
+            labels: ['2021','2022', "2023", "2024" ],
             datasets: [{
-                label: 'Total Births (2021-2023)',
-                data: [ 507, 405, 401],
-                backgroundColor: ['rgba(54, 162, 235, 1)', 'rgba(218, 65, 56, 1)','rgba(77, 56, 218, 1)'],
+                label: 'Total Births (2021-2024)',
+                data: [ 507, 405, 401, 401],
+                backgroundColor: ['#92C5F9', '#439E5','rgba(77, 56, 218, 1)','rgb(61, 8, 110)'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 },
                 title: {
                     display: true,
-                    text: "Total Births (2021-2023)",
+                    text: "Total Births (2021-2024)",
                     font: { 
                         size: 24 
                     }       
@@ -113,11 +113,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var chart4 = new Chart(ctx4, {
         type: 'bar',
         data: {
-            labels: ['2021','2022', "2023"],
+            labels: ['2021','2022', "2023", "2024"],
             datasets: [{
-                label: 'Total Deaths (2021-2023)',
-                data: [ 239, 223, 58],
-                backgroundColor: ['#968800', '#968800','#880096'],
+                label: 'Total Deaths (2021-2024)',
+                data: [ 239, 223, 58, 221],
+                backgroundColor: ['#968800', '#968800','#880096', '#880099'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 },
                 title: {
                     display: true,
-                    text: "Total Deaths (2021-2023)",
+                    text: "Total Deaths (2021-2024)",
                     font: { 
                         size: 24 
                     }       
@@ -160,11 +160,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var chart5 = new Chart(ctx5, {
         type: 'bar',
         data: {
-            labels: ['2021','2022', "2023"],
+            labels: ['2021','2022', "2023","2024"],
             datasets: [{
-                label: 'Total In-Migration (2021-2023)',
-                data: [ 1649, 945, 140],
-                backgroundColor: ['#3d0096', '#8a66c0','#d0c1e5'],
+                label: 'Total In-Migration (2021-2024)',
+                data: [ 1649, 945, 140, 198],
+                backgroundColor: ['#3d0096', '#8a66c0','#d0c1e5', '#d0c1b9'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 },
                 title: {
                     display: true,
-                    text: "Total In-Migration (2021-2023)",
+                    text: "Total In-Migration (2021-2024)",
                     font: { 
                         size: 24 
                     }       
@@ -207,11 +207,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var chart6 = new Chart(ctx6, {
         type: 'bar',
         data: {
-            labels: ['2021','2022', "2023"],
+            labels: ['2021','2022', "2023","2024"],
             datasets: [{
-                label: 'Total Out-Migration (2021-2023)',
-                data: [ 991, 941, 40],
-                backgroundColor: ['#b73a4c', '#3a8ab7','#191919'],
+                label: 'Total Out-Migration (2021-2024)',
+                data: [ 991, 941, 40, 56],
+                backgroundColor: ['#b73a4c', '#3a8ab7','#191919', '#3a8ae4'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 },
                 title: {
                     display: true,
-                    text: "Total Out-Migration (2021-2023)",
+                    text: "Total Out-Migration (2021-2024)",
                     font: { 
                         size: 24 
                     }       
