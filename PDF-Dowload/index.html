@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Download PDF</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, select {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    #downloadSection {
+      display: none;
+      margin-top: 20px;
+    }
+    .sbtn {
+      margin: 10px;
+      width: 100%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Add this where you want the link to appear -->
+  <p><a href="admin.html">Go to Admin Panel</a></p>
+
+  <h2>Access PDF</h2>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="email" id="email" placeholder="Your Email">
+  <!-- Added PDF selection dropdown -->
+  <select id="pdfSelect">
+    <option value="" disabled selected>Select a PDF</option>
+    <option value="Bayas.pdf">Bayas.pdf</option>
+    <option value="Bayuyan.pdf">Bayuyan.pdf</option>
+    <option value="Botongon.pdf">Botongon.pdf</option>
+    <option value="Bulaquena.pdf">Bulaquena.pdf</option>
+    <option value="Calapdan.pdf">Calapdan.pdf</option>
+    <option value="Cano-an.pdf">Cano-an.pdf</option>
+    <option value="Daan Banwa.pdf">Daan Banwa.pdf</option>
+    <option value="Daculan.pdf">Daculan.pdf</option>
+    <option value="Gogo.pdf">Gogo.pdf</option>
+    <option value="Jolog.pdf">Jolog.pdf</option>
+    <option value="Loguingot.pdf">Loguingot.pdf</option>
+    <option value="Lonoy.pdf">Lonoy.pdf</option>
+    <option value="Lumbia.pdf">Lumbia.pdf</option>
+    <option value="Malbog.pdf">Malbog.pdf</option>
+    <option value="Manipulon.pdf">Manipulon.pdf</option>
+    <option value="Municipal.pdf">Municipal.pdf</option>
+    <option value="Pa-on.pdf">Pa-on.pdf</option>
+    <option value="Poblacion  Zone II.pdf">Poblacion  Zone II.pdf</option>
+    <option value="Poblacion Zone I.pdf">Poblacion Zone I.pdf</option>
+    <option value="Poblacion Zone III.pdf">Poblacion Zone III.pdf</option>
+    <option value="San Roque.pdf">San Roque.pdf</option>
+    <option value="Sta. Ana.pdf">Sta. Ana.pdf</option>
+    <option value="Tabu-an.pdf">Tabu-an.pdf</option>
+    <option value="Tacbuyan.pdf">Tacbuyan.pdf</option>
+    <option value="Tanza.pdf">Tanza.pdf</option>
+    <option value="Villa Pani-an.pdf">Villa Pani-an.pdf</option>
+  </select>
+  <button class="sbtn" onclick="register()">Submit</button>
+
+  <div id="downloadSection">
+    <p>Thank you!</p>
+    <a id="downloadLink" href="PDF" download onclick="hideDownloadLink()">Download PDF</a>
+  </div>
+
+  <script>
+    const client = JSON.parse(localStorage.getItem('clientList')) || [];
+
+    function register() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const pdf = document.getElementById('pdfSelect').value;
+  const now = new Date();
+  const timestamp = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0') + ' ' +
+    String(now.getHours()).padStart(2, '0') + ':' +
+    String(now.getMinutes()).padStart(2, '0') + ':' +
+    String(now.getSeconds()).padStart(2, '0');
+
+  if (!name || !email || !pdf) {
+    alert('Enter name, email, and select a PDF.');
+    return;
+  }
+
+  client.push({ name, email, pdf, timestamp });
+  localStorage.setItem('clientList', JSON.stringify(client));
+
+  document.getElementById('downloadSection').style.display = 'block';
+  document.getElementById('downloadLink').style.display = 'inline';
+  document.getElementById('downloadLink').href = `PDF/PDF2024/${pdf}`;
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('pdfSelect').selectedIndex = 0;
+}
+    function hideDownloadLink() {
+      document.getElementById('downloadLink').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

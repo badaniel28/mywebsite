@@ -1,0 +1,88 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h2>Admin Login</h2>
+  <input type="text" id="adminUser" placeholder="Username">
+  <input type="password" id="adminPass" placeholder="Password">
+  <button onclick="login()">Login</button>
+
+  <div id="adminSection" style="display:none;">
+    <h3>Client List</h3>
+    <ul id="clientList"></ul>
+    <button onclick="downloadCSV()">Download CSV</button>
+    <button onclick="clearList()">Clear List</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <p><a href="index.html">Go to User Page</a></p>
+
+  <script>
+    const adminCreds = { username: 'admin', password: 'admin123' };
+    const client = JSON.parse(localStorage.getItem('clientList')) || [];
+
+    function login() {
+      const user = document.getElementById('adminUser').value;
+      const pass = document.getElementById('adminPass').value;
+      if (user === adminCreds.username && pass === adminCreds.password) {
+        document.getElementById('adminSection').style.display = 'block';
+        document.getElementById('adminUser').style.display = 'none';
+        document.getElementById('adminPass').style.display = 'none';
+        displayClients();
+      } else {
+        alert("Invalid credentials.");
+      }
+    }
+
+    function logout() {
+      location.reload();
+    }
+
+    function displayClients() {
+      const list = document.getElementById('clientList');
+      list.innerHTML = '';
+      client.forEach(entry => {
+        // If entry is an object (new format), show details; else, show as string (old format)
+        if (typeof entry === 'object' && entry !== null) {
+          const li = document.createElement('li');
+          li.textContent = `Name: ${entry.name}, Email: ${entry.email}, PDF: ${entry.pdf}, Time: ${entry.timestamp}`;
+          list.appendChild(li);
+        } else {
+          const li = document.createElement('li');
+          li.textContent = entry;
+          list.appendChild(li);
+        }
+      });
+    }
+
+    function downloadCSV() {
+      const date = new Date().toISOString().split('T')[0];
+      let csv = 'Name,Email,PDF,Downloaded At\n';
+      client.forEach(c => {
+        if (typeof c === 'object' && c !== null) {
+          csv += `"${c.name}","${c.email}","${c.pdf}","${c.timestamp}"\n`;
+        } else {
+          csv += `"${c}","","",""\n`;
+        }
+      });
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `client_list_${date}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    function clearList() {
+      localStorage.removeItem('clientList');
+      client.length = 0;
+      displayClients();
+    }
+  </script>
+</body>
+</html>
