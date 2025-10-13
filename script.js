@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 {
                     label: 'Male',
                     backgroundColor: 'rgb(54, 162, 235)',
-                    data: [-1397, -2229,-3006, -3100, -2960, -2829, -2480, -2046, -1761,-1661,  -1400, -1173,-969, -667, -440, -261,  -256].reverse()  // Use negative values for left side
+                    data: [-1238, -2078,-2943, -3037, -3029, -2905, -2565, -2126, -1787, -1724, -1373, -1223, -1027, -706, -483, -278, -285].reverse()  // Use negative values for left side
                   
                 },
                 {
                     label: 'Female',
                     backgroundColor: 'rgb(255, 99, 132)',
-                    data: [  1331, 2183, 2824, 3050, 2893, 2805,  2321, 1790, 1723, 1531, 1310, 1191, 955, 817,  580, 369,558].reverse() // Positive values for right side
+                    data: [1189, 2046, 2771, 2935, 2967, 2870, 2434, 1851, 1750, 1574, 1290, 1229, 1027, 804, 627, 407, 584].reverse() // Positive values for right side
                 }
             ]
         },
@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var chart1 = new Chart(ctx1, {
         type: 'bar',
         data: {
-            labels: ['2021','2022', "2023"],
+            labels: ['2021','2022', '2023','2024'],
             datasets: [{
                 label: 'Total Population',
-                data: [ 55130, 56394, 56866],
-                backgroundColor: ['rgba(54, 162, 235, 1)', 'rgba(218, 65, 56, 1)','rgba(77, 56, 218, 1)'],
+                data: [ 55130, 56394, 56866, 57162],
+                backgroundColor: ['rgb(75, 87, 95)', 'rgba(218, 65, 56, 1)','rgba(77, 56, 218, 1)', 'rgb(218, 94, 56)'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             labels: ['2021','2022', "2023", "2024"],
             datasets: [{
                 label: 'Total Deaths (2021-2024)',
-                data: [ 239, 223, 58, 221],
+                data: [ 239, 223, 58, 213],
                 backgroundColor: ['#968800', '#968800','#880096', '#880099'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             labels: ['2021','2022', "2023","2024"],
             datasets: [{
                 label: 'Total In-Migration (2021-2024)',
-                data: [ 1649, 945, 140, 198],
+                data: [ 1649, 945, 140, 752],
                 backgroundColor: ['#3d0096', '#8a66c0','#d0c1e5', '#d0c1b9'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             labels: ['2021','2022', "2023","2024"],
             datasets: [{
                 label: 'Total Out-Migration (2021-2024)',
-                data: [ 991, 941, 40, 56],
+                data: [ 991, 941, 40, 364],
                 backgroundColor: ['#b73a4c', '#3a8ab7','#191919', '#3a8ae4'],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
